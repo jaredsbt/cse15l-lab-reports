@@ -12,4 +12,11 @@ ar-lb.txt  en-us.txt  es-mx.txt  zh-cn.txt`
 messages/ar-lb.txt`
 
 # `cat`
-1) `cat` without arguments 
+1) `cat` without arguments makes a new line and waits for a correct input. Ex) `[user@sahara ~/lecture1/messages]$ cat
+ar-lb.txt
+ar-lb.txt
+`
+2) `cat` with directory argument gives an error because cat requires a file argument not a directory. Ex) `[user@sahara ~/lecture1]$ cat messages/
+cat: messages/: Is a directory`
+3) `cat` with file path argument prints the text within the file. Ex) `[user@sahara ~/lecture1]$ cat messages/ar-lb.txt 
+مرحبا بالعالم!`
