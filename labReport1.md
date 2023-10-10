@@ -1,4 +1,4 @@
-# **LabReport1
+# LabReport1
 
 # `cd`
 1) `cd` without arguments takes user to root directory. Ex) `[user@sahara ~/lecture1/messages]$ cd`
