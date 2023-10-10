@@ -1,3 +1,5 @@
+# **LabReport1
+
 # `cd`
 1) `cd` without arguments takes user to root directory. Ex) `[user@sahara ~/lecture1/messages]$ cd`
 2) `cd` with directory argument changes directory to the specified directory. Ex) `[user@sahara ~/lecture1]$ cd messages/`
