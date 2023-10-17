@@ -12,12 +12,13 @@ class Handler implements URLHandler {
         
         else if (url.getPath().contains("/add-message")) {
             String[] addedWords = url.getQuery().split("=");
-                if (addedWords[0].equals("s")) {
-                    listWords.add(addedWords[1]);
-                    for(int i = 0; i < listWords.length; i++) {
-                        (i+1). System.out.println(listWords[i])
-                    }
+            if (addedWords[0].equals("s")) {
+                listWords.add(addedWords[1]);
+                for(int i = 0; i < listWords.length; i++) {
+                    (i+1). System.out.println(listWords[i])
                 }
+                return
+            }
         } 
     }
 }   
