@@ -14,29 +14,24 @@ class Handler implements URLHandler {
             return String.format("Word: %d", emptyString);
         } 
         
-        else if (url.getPath().contains("/search")) {
-            String[] searchedWords = url.getQuery().split("=");
-                if (searchedWords[0].equals("s")) {
-                    for (int i = 0; i < listString.size(); i++) {
-                        if listString[i].contains(searchedWords[1]) {
-                            searchWords.add(word);
-                        }
-                    }
-                    return searchWords;
-                }
-            }
-        } 
-
-        else {
-            if (url.getPath().contains("/add")) {
-                String[] addedWords = url.getQuery().split("=");
+        else if (url.getPath().contains("/add-message")) {
+            String[] addedWords = url.getQuery().split("=");
                 if (addedWords[0].equals("s")) {
                     listStrings.add(addedWords[1]);
                     return listStrings;
                 }
-            }
-            return "404 Not Found!";
-        }
+        } 
+
+        // else {
+        //     if (url.getPath().contains("/add")) {
+        //         String[] addedWords = url.getQuery().split("=");
+        //         if (addedWords[0].equals("s")) {
+        //             listStrings.add(addedWords[1]);
+        //             return listStrings;
+        //         }
+        //     }
+        //     return "404 Not Found!";
+        // }
     }
 }   
 
