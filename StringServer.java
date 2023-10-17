@@ -3,11 +3,7 @@ import java.net.URI;
 import java.util.*;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
-    List<String> listString = new ArrayList<String>();
-    String emptyString = ""
-    List<String> searchWords = new ArrayList<String>(); 
+    List<String> listWords = new ArrayList<String>()
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -17,21 +13,12 @@ class Handler implements URLHandler {
         else if (url.getPath().contains("/add-message")) {
             String[] addedWords = url.getQuery().split("=");
                 if (addedWords[0].equals("s")) {
-                    listStrings.add(addedWords[1]);
-                    return listStrings;
+                    listWords.add(addedWords[1]);
+                    for(int i = 0; i < listWords.length; i++) {
+                        (i+1). System.out.println(listWords[i])
+                    }
                 }
         } 
-
-        // else {
-        //     if (url.getPath().contains("/add")) {
-        //         String[] addedWords = url.getQuery().split("=");
-        //         if (addedWords[0].equals("s")) {
-        //             listStrings.add(addedWords[1]);
-        //             return listStrings;
-        //         }
-        //     }
-        //     return "404 Not Found!";
-        // }
     }
 }   
 
