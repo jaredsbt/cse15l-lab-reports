@@ -3,24 +3,18 @@ import java.net.URI;
 import java.util.*;
 
 class Handler implements URLHandler {
-    List<String> listWords = new ArrayList<String>();
     String emptyString = "";
-    int count = 0;
+    int count = 1 ;
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return emptyString;
+            return "Nothing";
         } 
         
         else if (url.getPath().contains("/add-message")) {
             String[] addedWords = url.getQuery().split("=");
             if (addedWords[0].equals("s")) {
-                listWords.add(addedWords[1]);
-                for(int i = count; i < listWords.size(); i++) {
-                    emptyString += " " + listWords.get(i) + "\n";
-                    // System.out.println(listWords.get(i));
-                }
-                count += 1;
+                emptyString += addedWords[1] + "\n";
                 return emptyString;
             }
         } 
