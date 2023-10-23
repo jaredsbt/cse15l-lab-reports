@@ -15,6 +15,7 @@ class Handler implements URLHandler {
             String[] addedWords = url.getQuery().split("=");
             if (addedWords[0].equals("s")) {
                 emptyString += String.valueOf(count) + ") " + addedWords[1] + "\n";
+                count += 1;
                 return emptyString;
             }
         } 
