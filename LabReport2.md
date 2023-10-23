@@ -37,4 +37,14 @@ class NumberServer {
     }
 }
 
+# Part 1
 ![alt text]([http://url/to/img.png](https://github.com/jaredsbt/cse15l-lab-reports/blob/main/images/Hello.png)https://github.com/jaredsbt/cse15l-lab-reports/blob/main/images/Hello.png)
+1) getPath(), getQuery(), split(), equals(), String.valueOf()
+2) getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
+
+1) replace(), getPath(), getQuery(), split(), equals(), String.valueOf()
+2) Replace allows us to replace the "+" added to queries with spaces, getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
+
+
+# Part 2)
+1) 
