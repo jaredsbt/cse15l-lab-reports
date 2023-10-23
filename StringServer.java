@@ -14,7 +14,7 @@ class Handler implements URLHandler {
         else if (url.getPath().contains("/add-message")) {
             String[] addedWords = url.getQuery().split("=");
             if (addedWords[0].equals("s")) {
-                emptyString += addedWords[1] + "\n";
+                emptyString += String.valueOf(count) + ") " + addedWords[1] + "\n";
                 return emptyString;
             }
         } 
