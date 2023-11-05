@@ -1,3 +1,6 @@
+# Lab Report 2
+
+'
 import java.io.IOException;
 import java.net.URI;
 import java.util.*;
@@ -36,9 +39,10 @@ class NumberServer {
         Server.start(port, new Handler());
     }
 }
-
+'
 # Part 1
 ![Hello image](images/Hello.png)
+
 1) getPath(), getQuery(), split(), equals(), String.valueOf()
 2) getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
 
