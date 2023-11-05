@@ -38,7 +38,7 @@ class NumberServer {
 }
 
 # Part 1
-![alt text](images/How are you.png)
+![Hello image](images/Hello.png)
 1) getPath(), getQuery(), split(), equals(), String.valueOf()
 2) getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
 
