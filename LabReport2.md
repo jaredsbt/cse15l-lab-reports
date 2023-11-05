@@ -1,6 +1,25 @@
 # Lab Report 2
 
-'
+# Part 1
+![Hello image](images/Hello.png)
+
+1) getPath(), getQuery(), split(), equals(), String.valueOf()
+2) getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
+
+![How are you image](images/HowAreYou.png)
+1) replace(), getPath(), getQuery(), split(), equals(), String.valueOf()
+2) Replace allows us to replace the "+" added to queries with spaces, getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
+
+
+# Part 2)
+1) /Users/papaj/.ssh/id_rsa.pub
+2) /Users/papaj/.ssh/id_rsa.pub
+
+# Part 3) 
+I learned how to make directory with the mkdir command. I learned how to remove the need to enter passphrase when accessing remote computer using ssh-keygen and authorizing keys.  
+
+# Code
+
 import java.io.IOException;
 import java.net.URI;
 import java.util.*;
@@ -39,21 +58,3 @@ class NumberServer {
         Server.start(port, new Handler());
     }
 }
-'
-# Part 1
-![Hello image](images/Hello.png)
-
-1) getPath(), getQuery(), split(), equals(), String.valueOf()
-2) getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
-
-![How are you image](images/HowAreYou.png)
-1) replace(), getPath(), getQuery(), split(), equals(), String.valueOf()
-2) Replace allows us to replace the "+" added to queries with spaces, getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
-
-
-# Part 2)
-1) /Users/papaj/.ssh/id_rsa.pub
-2) /Users/papaj/.ssh/id_rsa.pub
-
-# Part 3) 
-I learned how to make directory with the mkdir command. I learned how to remove the need to enter passphrase when accessing remote computer using ssh-keygen and authorizing keys.  
