@@ -23,8 +23,9 @@ NOTE: \n is not actually displayed, it is used to indicate a new line made"
 
 
 # Part 2)
-1) /Users/papaj/.ssh/id_rsa.pub
-2) /Users/papaj/.ssh/id_rsa.pub
+1) ![Priavte](images/HowAreYou.png)
+2) ![Public](images/HowAreYou.png)
+3) ![OutPut](images/HowAreYou.png)
 
 # Part 3) 
 I learned how to make directory with the mkdir command. I learned how to remove the need to enter passphrase when accessing remote computer using ssh-keygen and authorizing keys.  
