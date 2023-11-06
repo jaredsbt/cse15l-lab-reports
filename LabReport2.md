@@ -3,12 +3,12 @@
 # Part 1
 ![Hello image](images/Hello.png)
 
-1) The public string method, 'handleRequest'
-2) 'HandleRequest' is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "Hi" is concatenated with the Handler class's string field called 'emptyString'. Handler also uses an int field called 'counter' that keeps track of the amount URI requests. Prior to the uri request, the defeault value of the 'emptyString' field is an empty string ("") and the default value of the 'counter' field is 1. 
-3) The value of field 'emptyString' is changed by first concatenating the value of 'counter' with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like:
-    'emptyString = "1) Hi
-                   '
-    'counter = 2'
+1) The public string method, `handleRequest`
+2) `HandleRequest` is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "Hi" is concatenated with the Handler class's string field called `emptyString`. Handler also uses an int field called `counter` that keeps track of the amount URI requests. Prior to the uri request, the defeault value of the `emptyString` field is an empty string ("") and the default value of the `counter` field is 1. 
+3) The value of field `emptyString` is changed by first concatenating the value of `counter` with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like:
+    `emptyString = "1) Hi
+                   `
+    `counter = 2`
 
 The emptyString field concatenates the string following "add-message?s=", and the counter field is a of type integer that keeps track of the amount of times the server loads a new URI request starting at count 1.  along with an integer field called counter, is mutable every time the server loads a new uri path with a string following "add-message?s=".
 
