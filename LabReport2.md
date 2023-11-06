@@ -5,17 +5,21 @@
 
 1) The public string method, `handleRequest`
 2) `handleRequest` is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "Hi" is concatenated with the Handler class's string field called `emptyString`. Handler also uses an int field called `counter` that keeps track of the amount URI requests. Prior to the uri request, the default value of the `emptyString` field is an empty string ("") and the default value of the `counter` field is 1. 
-3) The value of field `emptyString` is changed by first concatenating the value of `counter` (1) with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like:
-    `emptyString = "1) Hi
-
-                   `
+3) The value of field `emptyString` is changed by first concatenating the value of `counter` (1) with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like: 
+    `emptyString = "1) Hi \n`
     `counter = 2`
+NOTE: \n is not actually displayed, it is used to indicate a new line made"
 
 The emptyString field concatenates the string following "add-message?s=", and the counter field is a of type integer that keeps track of the amount of times the server loads a new URI request starting at count 1.  along with an integer field called counter, is mutable every time the server loads a new uri path with a string following "add-message?s=".
 
 ![How are you image](images/HowAreYou.png)
-1) replace(), getPath(), getQuery(), split(), equals(), String.valueOf()
-2) Replace allows us to replace the "+" added to queries with spaces, getPath() allows us to access the url, getQuery looks at the query paramter, equals makes a comparison between the first user input in the url, String.valueOf allows to typecast int to String to number list of words.
+1) The public string method, `handleRequest`
+2) `handleRequest` is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "Hi" is concatenated with the Handler class's string field called `emptyString`. Handler also uses an int field called `counter` that keeps track of the amount URI requests. Prior to the uri request, the value of the `emptyString` field is: `emptyString = "1) Hi \n` ; and the value of the counter field is: 2.
+3) The value of field `emptyString` is changed by first concatenating the value of `counter` (2) with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like: 
+    `emptyString = "1) Hi \n
+                    2) How are you \n`
+    `counter = 3`
+NOTE: \n is not actually displayed, it is used to indicate a new line made"
 
 
 # Part 2)
