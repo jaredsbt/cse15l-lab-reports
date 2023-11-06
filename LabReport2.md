@@ -24,7 +24,7 @@ NOTE: \n is not actually displayed, it is used to indicate a new line made"
 
 # Part 2)
 1) ![Priavte](PrivateKey.png)
-2) ![Public](PrivateKey.png)
+2) ![Public](PublicKey.png)
 3) ![OutPut](NoPassWord.png)
 
 # Part 3) 
