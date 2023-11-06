@@ -115,3 +115,4 @@ output: `
         several scientists, who present overwhelming evidence for the disparity in scientific 	
 	➜  plos git:(main) ✗ 
 `
+This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
