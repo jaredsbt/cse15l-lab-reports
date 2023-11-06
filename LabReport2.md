@@ -31,8 +31,6 @@ NOTE: \n is not actually displayed, it is used to indicate a new line made"
 I learned how to make directory with the mkdir command. I learned how to remove the need to enter passphrase when accessing remote computer using ssh-keygen and authorizing keys.  
 
 # Code
-`
-
 
     import java.io.IOException;
     import java.net.URI;
@@ -72,4 +70,3 @@ I learned how to make directory with the mkdir command. I learned how to remove 
             Server.start(port, new Handler());
         }
     }
-`
