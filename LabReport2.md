@@ -26,7 +26,7 @@ NOTE: \n is not actually displayed, it is used to indicate a new line made"
 3) ![OutPut](NoPassWord.png)
 
 # Part 3) 
-I learned how to make directory with the mkdir command. I learned how to remove the need to enter passphrase when accessing remote computer using ssh-keygen and authorizing keys.  
+I learned how to make directory with the mkdir command. I learned how to remove the need to enter passphrase when accessing remote computer using ssh-keygen and authorizing keys. I learned how to connect to a remote computer and that I can acess my public key through the remote computer. I can access my private key through my own local computer. 
 
 # Code
 
