@@ -10,8 +10,6 @@
     `counter = 2`
 NOTE: \n is not actually displayed, it is used to indicate a new line made"
 
-The emptyString field concatenates the string following "add-message?s=", and the counter field is a of type integer that keeps track of the amount of times the server loads a new URI request starting at count 1.  along with an integer field called counter, is mutable every time the server loads a new uri path with a string following "add-message?s=".
-
 ![How are you image](images/HowAreYou.png)
 1) The public string method, `handleRequest`. A function for strings 'replace'.
 2) `handleRequest` is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "How are you" is concatenated with the Handler class's string field called `emptyString`. "How are you" request will be concatenated with plus signs in between the words, so we use a string replcace function to get rid of the plus signs and allow the space in between the words. Handler also uses an int field called `counter` that keeps track of the amount URI requests. Prior to the uri request, the value of the `emptyString` field is: `emptyString = "1) Hi \n` ; and the value of the counter field is: 2.
