@@ -23,9 +23,9 @@ NOTE: \n is not actually displayed, it is used to indicate a new line made"
 
 
 # Part 2)
-1) ![Priavte](images/HowAreYou.png)
+1) ![Priavte](NoPassWord.png)
 2) ![Public](images/HowAreYou.png)
-3) ![OutPut](images/HowAreYou.png)
+3) ![OutPut](NoPassWord.png)
 
 # Part 3) 
 I learned how to make directory with the mkdir command. I learned how to remove the need to enter passphrase when accessing remote computer using ssh-keygen and authorizing keys.  
