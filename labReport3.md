@@ -116,3 +116,82 @@ output: `
 	➜  plos git:(main) ✗ 
 `
 This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
+
+
+PWD: /Users/papaj/docsearch/technical/biomed
+
+command: `less -N 1468-6708-3-1.txt`
+output: `
+      2   
+      3     
+      4       
+      5         Introduction
+      6         Older adults are frequently counseled to lose weight,
+      7         even though there is little evidence that overweight is
+      8         associated with increased mortality in those over age 65.
+      9         Six large controlled population-based studies of
+     10         non-smoking older adults have investigated the association`
+
+This command numbers all the lines, which is important if one would like to reference a line. 
+
+command: `less -m 1468-6708-3-1.txt`
+output: `
+          Years of life and years of healthy life
+          YOL is the number of years that a person lived in the
+          7 years after baseline. YHL is the number of years in
+          which the person was 'healthy', and is similar in concept
+          to quality-adjusted life-years, healthy year equivalents,
+18%`
+
+This command shows the percentage of the text that has been viewed. 100% meaning the text has reached the end
+
+command: `less -E 1468-6708-3-1.txt`
+output: `
+Covariates
+          The goal is to examine the association of YOL and YHL
+          with BMI. To adjust for possible confounding we chose
+          baseline covariates that were prevalent in the elderly,
+          related to mortality and morbidity in previous studies,
+          and likely to be related to BMI. Self-reported covariates
+          include age, gender, smoking (never or former), history
+          of arthritis, cancer, diabetes, fair or poor self-rated
+          health status, limitations in activities of daily living
+          or in instrumental activities of daily living, and 10
+          pounds or more unintended weight loss in the year before
+          baseline. Clinical covariates include hypertension,
+          cardiovascular disease (prevalent heart disease,
+          peripheral vascular disease, or cerebrovascular disease),
+          maximum thickness of the internal carotid artery,
+          depression (CESD score), serum albumin, serum`
+
+This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
+
+command: `less -X 1468-6708-3-1.txt`
+output: `	
+
+	➜  biomed git:(main) ✗ less -X 1468-6708-3-1.txt
+
+  
+    
+      
+        Introduction
+        Older adults are frequently counseled to lose weight,
+        even though there is little evidence that overweight is
+        associated with increased mortality in those over age 65.
+        Six large controlled population-based studies of
+        non-smoking older adults have investigated the association
+        between body mass index (BMI) and mortality, controlling
+        for relevant covariates [ 1 2 3 4 5 6 ] . All studies found
+        excess risk for persons with very low BMI, but that persons
+        with moderately high BMI had little or no extra risk except
+        in certain small subsets. A review of 13 studies of older
+        adults drew similar conclusions [ 7 ] .
+        Many healthy older adults report gradual weight gain
+        throughout adult life. It may be that a small amount of
+        gradual weight gain is normative and associated with the
+        most robust health as we age. It has been suggested that
+        weight standards be adjusted upwards for age [ 8 ] . Such
+        recommendations remain controversial, however, because the
+        number of studies of older persons is fairly small, and
+	➜  biomed git:(main) ✗ `
+This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
