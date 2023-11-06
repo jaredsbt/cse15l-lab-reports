@@ -96,10 +96,12 @@ output: `Publishing Trends in the Americas
 This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
 
 command: `less -X journal.pbio.0020001.txt`
-output: `plos git:(main) ✗ less -X journal.pbio.0020001.txt
+output: `
+
+`
 
   
-    
+    plos git:(main) ✗ less -X journal.pbio.0020001.txt
       
         
         Kofi Annan, the Secretary-General of the United Nations, recently called attention to
@@ -110,5 +112,6 @@ output: `plos git:(main) ✗ less -X journal.pbio.0020001.txt
         countries, asserting that “This unbalanced distribution of scientific activity generates
         serious problems not only for the scientific community in the developing countries, but for
         development itself.” Indeed, Mr. Annan's sentiments have also been echoed recently by
-        several scientists, who present overwhelming evidence for the disparity in scientific
-➜  plos git:(main) ✗ `
+        several scientists, who present overwhelming evidence for the disparity in scientific 	
+	➜  plos git:(main) ✗ 
+`
