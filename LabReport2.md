@@ -3,9 +3,14 @@
 # Part 1
 ![Hello image](images/Hello.png)
 
-1) The public string method, handleRequest
-2) HandleRequest is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. This string is concatenated with the Handler class's string field, emptyString, intialized with an empty string. The emptyString field concatenates the string following "add-message?s=", and the counter field is a of type integer that keeps track of the amount of times the server loads a new URI request starting at count 1.  along with an integer field called counter, is mutable every time the server loads a new uri path with a string following "add-message?s=".
-4) The value is changed by concatenating the string after "add-message?s=" within the uri path. It does not matter if the request is meant to be an integer (123) or a double (1.23), the requests are treated as strings. These strings are then listed with counter (which kept track of the amount of requests) by conctatenating counter along with ")" and a new line "\" to emptyString.
+1) The public string method, 'handleRequest'
+2) 'HandleRequest' is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "Hi" is concatenated with the Handler class's string field called 'emptyString'. Handler also uses an int field called 'counter' that keeps track of the amount URI requests. Prior to the uri request, the defeault value of the 'emptyString' field is an empty string ("") and the default value of the 'counter' field is 1. 
+3) The value of field 'emptyString' is changed by first concatenating the value of 'counter' with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like:
+    'emptyString = "1) Hi
+                   '
+    'counter = 2'
+
+The emptyString field concatenates the string following "add-message?s=", and the counter field is a of type integer that keeps track of the amount of times the server loads a new URI request starting at count 1.  along with an integer field called counter, is mutable every time the server loads a new uri path with a string following "add-message?s=".
 
 ![How are you image](images/HowAreYou.png)
 1) replace(), getPath(), getQuery(), split(), equals(), String.valueOf()
