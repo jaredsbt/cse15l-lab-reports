@@ -5,7 +5,7 @@
 
 1) The public string method, `handleRequest`
 2) `handleRequest` is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "Hi" is concatenated with the Handler class's string field called `emptyString`. Handler also uses an int field called `counter` that keeps track of the amount URI requests. Prior to the uri request, the default value of the `emptyString` field is an empty string ("") and the default value of the `counter` field is 1. 
-3) The value of field `emptyString` is changed by first concatenating the value of `counter` (1) with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like: 
+3) The value of field `emptyString` is changed by first concatenating the value of `counter` (1) with ") ", the string after "add-message?s=" within the uri path which is "Hi", and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like: 
     `emptyString = "1) Hi \n`
     `counter = 2`
 NOTE: \n is not actually displayed, it is used to indicate a new line made"
@@ -13,9 +13,9 @@ NOTE: \n is not actually displayed, it is used to indicate a new line made"
 The emptyString field concatenates the string following "add-message?s=", and the counter field is a of type integer that keeps track of the amount of times the server loads a new URI request starting at count 1.  along with an integer field called counter, is mutable every time the server loads a new uri path with a string following "add-message?s=".
 
 ![How are you image](images/HowAreYou.png)
-1) The public string method, `handleRequest`
-2) `handleRequest` is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "Hi" is concatenated with the Handler class's string field called `emptyString`. Handler also uses an int field called `counter` that keeps track of the amount URI requests. Prior to the uri request, the value of the `emptyString` field is: `emptyString = "1) Hi \n` ; and the value of the counter field is: 2.
-3) The value of field `emptyString` is changed by first concatenating the value of `counter` (2) with ") ", the string after "add-message?s=" within the uri path, and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like: 
+1) The public string method, `handleRequest`. A function for strings 'replace'.
+2) `handleRequest` is called with an URI as its arguement, and it looks at the string input after the "=" in the uri path. In this case, the string "How are you" is concatenated with the Handler class's string field called `emptyString`. "How are you" request will be concatenated with plus signs in between the words, so we use a string replcace function to get rid of the plus signs and allow the space in between the words. Handler also uses an int field called `counter` that keeps track of the amount URI requests. Prior to the uri request, the value of the `emptyString` field is: `emptyString = "1) Hi \n` ; and the value of the counter field is: 2.
+3) The value of field `emptyString` is changed by first concatenating the value of `counter` (2) with ") ", the string after "add-message?s=" within the uri path which is "How are you", and a line break " \n". Since 'counter' keeps track of the amount of requests made starting at 1, we have to add 1 every time there is a request in the uri path. In the moment, our fields look like: 
     `emptyString = "1) Hi \n
                     2) How are you \n`
     `counter = 3`
