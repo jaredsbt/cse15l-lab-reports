@@ -49,9 +49,9 @@ arrays first differed at element [2]; expected:<3> but was:<1>`
 ```
 
 ## Part 2 - Researching Commands
-directory: /Users/papaj/docsearch/technical/plos
-command: `less -N journal.pbio.0020001.txt`
-output: `
+* Directory: /Users/papaj/docsearch/technical/plos
+* Command: `less -N journal.pbio.0020001.txt`
+* Output: `
       1 
       2   
       3     
