@@ -51,7 +51,8 @@ arrays first differed at element [2]; expected:<3> but was:<1>`
 ## Part 2 - Researching Commands
 * Directory: /Users/papaj/docsearch/technical/plos
 * Command: `less -N journal.pbio.0020001.txt`
-* Output: `
+* Output:
+```
       1 
       2   
       3     
@@ -66,13 +67,14 @@ arrays first differed at element [2]; expected:<3> but was:<1>`
      12         serious problems not only for the scientific community in the de     12 veloping countries, but for
      13         development itself.” Indeed, Mr. Annan's sentiments have also be     13 en echoed recently by
      14         several scientists, who present overwhelming evidence for the di     14 sparity in scientific
-`
+```
 * This command numbers all the lines, which is important if one would like to reference a line.
   
 * command: `less -m journal.pbio.0020001.txt`
 * output:
 
-`with 4% in the top 10). These findings suggest that publications from su
+```
+with 4% in the top 10). These findings suggest that publications from su
 ch developing
         regions as Latin America are falling short of reaching the top journals.
  In contrast, the
@@ -95,11 +97,13 @@ ited States, and
         In 
         Science and 
 66%
-`
+```
 * This command shows the percentage of the text that has been viewed. 100% meaning the text has reached the end
 
 * command: `less -E journal.pbio.0020001.txt`
-* output: `Publishing Trends in the Americas
+* output:
+```
+  Publishing Trends in the Americas
         Using the SCI databases produced by the Institute for Scientific Information (ISI), as
         well as data compiled by the Red Iberoamericana de Indicadores de Ciencia y Tecnología
         (RICYT), we examined the differences in the number and proportion of scientific
@@ -109,13 +113,13 @@ ited States, and
         lion's share (84.2%), followed by Canada (10.35%). Latin America as a whole contributed
         only 5.45% to the total number of scientific publications in these ten years (RICYT
         2002).
-`
+```
 * This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
 
 * command: `less -X journal.pbio.0020001.txt`
-* output: `
+* output: 
 
-`
+```
 
   
     plos git:(main) ✗ less -X journal.pbio.0020001.txt
@@ -131,14 +135,15 @@ ited States, and
         development itself.” Indeed, Mr. Annan's sentiments have also been echoed recently by
         several scientists, who present overwhelming evidence for the disparity in scientific 	
 	➜  plos git:(main) ✗ 
-`
+```
 * This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
 
 
 * PWD: /Users/papaj/docsearch/technical/biomed
 
 * command: `less -N 1468-6708-3-1.txt`
-* output: `
+* output:
+```
       2   
       3     
       4       
@@ -147,23 +152,27 @@ ited States, and
       7         even though there is little evidence that overweight is
       8         associated with increased mortality in those over age 65.
       9         Six large controlled population-based studies of
-     10         non-smoking older adults have investigated the association`
+     10         non-smoking older adults have investigated the association
+```
 
 * This command numbers all the lines, which is important if one would like to reference a line. 
 
 * command: `less -m 1468-6708-3-1.txt`
-* output: `
+* output:
+```
           Years of life and years of healthy life
           YOL is the number of years that a person lived in the
           7 years after baseline. YHL is the number of years in
           which the person was 'healthy', and is similar in concept
           to quality-adjusted life-years, healthy year equivalents,
-18%`
+18%
+```
 
 * This command shows the percentage of the text that has been viewed. 100% meaning the text has reached the end
 
 * command: `less -E 1468-6708-3-1.txt`
-* output: `
+* output:
+```
 Covariates
           The goal is to examine the association of YOL and YHL
           with BMI. To adjust for possible confounding we chose
@@ -179,12 +188,14 @@ Covariates
           cardiovascular disease (prevalent heart disease,
           peripheral vascular disease, or cerebrovascular disease),
           maximum thickness of the internal carotid artery,
-          depression (CESD score), serum albumin, serum`
+          depression (CESD score), serum albumin, serum
+```
 
 * This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
 
 * command: `less -X 1468-6708-3-1.txt`
-* output: `	
+* output:
+```	
 
 	➜  biomed git:(main) ✗ less -X 1468-6708-3-1.txt
 
@@ -210,5 +221,6 @@ Covariates
         weight standards be adjusted upwards for age [ 8 ] . Such
         recommendations remain controversial, however, because the
         number of studies of older persons is fairly small, and
-	➜  biomed git:(main) ✗ `
+	➜  biomed git:(main) ✗
+```
 * This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
