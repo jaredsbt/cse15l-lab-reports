@@ -3,20 +3,26 @@
 ## Part 1 - Bugs
 
 1) 
-`@Test 
+```
+@Test 
 	public void testReverseInPlace() {
     int[] input1 = { 3 , 2, 1 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 1, 2, 3 }, input1);
-	}`
-2) `@Test 
+	}
+```
+2)
+```
+  @Test 
 	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
-	}`
-3) ![Output](images/OutputLab3.png)
-4) ## Before:
+    		int[] input1 = { 3 };
+    		ArrayExamples.reverseInPlace(input1);
+  		assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
+
+4) ![Output](images/OutputLab3.png)
+5) ## Before:
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) {
