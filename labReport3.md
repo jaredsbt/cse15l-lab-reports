@@ -51,6 +51,7 @@ arrays first differed at element [2]; expected:<3> but was:<1>`
 ## Part 2 - Researching Commands
 * Directory: /Users/papaj/docsearch/technical/plos
 * Command: `less -N journal.pbio.0020001.txt`
+* This command numbers all the lines, which is important if one would like to reference a line.
 * Output:
 ```
       1 
@@ -68,9 +69,9 @@ arrays first differed at element [2]; expected:<3> but was:<1>`
      13         development itself.” Indeed, Mr. Annan's sentiments have also be     13 en echoed recently by
      14         several scientists, who present overwhelming evidence for the di     14 sparity in scientific
 ```
-* This command numbers all the lines, which is important if one would like to reference a line.
   
 * command: `less -m journal.pbio.0020001.txt`
+* This command shows the percentage of the text that has been viewed. 100% meaning the text has reached the end
 * output:
 
 ```
@@ -98,9 +99,9 @@ ited States, and
         Science and 
 66%
 ```
-* This command shows the percentage of the text that has been viewed. 100% meaning the text has reached the end
 
 * command: `less -E journal.pbio.0020001.txt`
+* This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
 * output:
 ```
   Publishing Trends in the Americas
@@ -114,10 +115,10 @@ ited States, and
         only 5.45% to the total number of scientific publications in these ten years (RICYT
         2002).
 ```
-* This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
 
 * command: `less -X journal.pbio.0020001.txt`
-* output: 
+* output:
+* This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal.
 
 ```
 
@@ -136,12 +137,11 @@ ited States, and
         several scientists, who present overwhelming evidence for the disparity in scientific 	
 	➜  plos git:(main) ✗ 
 ```
-* This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
-
 
 * PWD: /Users/papaj/docsearch/technical/biomed
 
 * command: `less -N 1468-6708-3-1.txt`
+* This command numbers all the lines, which is important if one would like to reference a line. 
 * output:
 ```
       2   
@@ -155,9 +155,8 @@ ited States, and
      10         non-smoking older adults have investigated the association
 ```
 
-* This command numbers all the lines, which is important if one would like to reference a line. 
-
 * command: `less -m 1468-6708-3-1.txt`
+* This command shows the percentage of the text that has been viewed. 100% meaning the text has reached the end
 * output:
 ```
           Years of life and years of healthy life
@@ -168,9 +167,10 @@ ited States, and
 18%
 ```
 
-* This command shows the percentage of the text that has been viewed. 100% meaning the text has reached the end
+
 
 * command: `less -E 1468-6708-3-1.txt`
+* This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
 * output:
 ```
 Covariates
@@ -191,9 +191,8 @@ Covariates
           depression (CESD score), serum albumin, serum
 ```
 
-* This command exits the file once user has reached the end of the file. This is useful to be quick and efficient if one does not feel like manually exiting the file once finished. 
-
 * command: `less -X 1468-6708-3-1.txt`
+* This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
 * output:
 ```	
 
@@ -223,4 +222,4 @@ Covariates
         number of studies of older persons is fairly small, and
 	➜  biomed git:(main) ✗
 ```
-* This command saves the files contents even after exitting. This is useful if one does not want to rerun the less command to look through the files content's again when they are in the terminal. 
+
