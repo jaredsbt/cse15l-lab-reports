@@ -2,6 +2,7 @@
 ## Student Post 
 Hello, I am anushka and I am having problems submitting my files to the grader. I am having trouble running the bash command to run the basch script grader on my file: 
 
+![StudentError](images/StudentError.png)
 
 
 The error I receive is : Incorrect file type. Must be java . The file I am submitting is README.txt
