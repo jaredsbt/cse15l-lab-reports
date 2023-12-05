@@ -75,3 +75,10 @@ class ListExamples {
 command with error: `bash grade.sh`
 
 command without error: `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
+
+You have to add a git url so the bash script can run corrrectly
+
+# Part 2 Reflection
+
+I did not know you can write bash scripts that can be ran in the terminal. I did not know bash commands were a thing until the second half of the quarter. I feel like it would be much more convienient using bash commands instead of doing everything in the terminal. Also, using vim and jbd commands to command straight from the terminal. this is useful as I see myself using these two technologies in order to fix and debug through the terminal instead of a code editor. 
+
