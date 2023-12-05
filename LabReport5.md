@@ -72,3 +72,6 @@ class ListExamples {
 
 }
 ```
+command with error: `bash grade.sh`
+
+command without error: `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3`
