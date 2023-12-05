@@ -12,3 +12,7 @@ Hello, Anushka! I see that your problem is you are not inputting the correct bas
 
 submitting a java file. Please make sure the extension of your file is .java and the file name is ListExamples ---> (ListExamples.java)
 
+## Student Post
+![StudentFixed] (images/FixedBashCommand.png)
+
+I see. The command needed a git url so it can access a correct java file type.
